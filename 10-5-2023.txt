@@ -1,0 +1,78 @@
+High Priority
+
+Python scripting
+personal projects
+just generally learn and do hobby projects
+
+All Python 3
+
+Also learn GIT heavily
+____________________________________________
+
+pytest - Python library for building a test framework
+-- only used a bit but still needed
+
+Telling linux where youre executing from
+	#!/usr/bin/env python
+
+Name of script, who wrote it, date
+
+
+Commenting multipe lines	
+"""
+"""
+
+Import statement
+from this import * 	# from this place, import these functs
+
+functions when stuff gets repetitive
+def mfg_data_sh(dbg: SBC: SBCDebug, cmd: str) -> str
+# the colons are just to make you know that it should be a string, doesnt force it
+# the arrow is to tell what the output should be, ||
+
+def test_something():
+
+pytest picks up the "test" in test_something and knows its a test
+
+set_test is used heavily
+- outputs a number id, whether it failed,  and the feature we were testing
+
+assert statement
+# assert if the condition is true, if the condition is false do this
+name = "mike"
+assert name == "justin", "Name was not equal to Justin" (name to compare, error message)
+# fails and gives an error message
+
+most test cases are taking an input and making sure we get the output we want
+
+time based tests get complex
+naming changes also screw stuff over
+try to predict and prepare for stuff, but a lot of the time its not worth it
+fragile tests are okay as long as they get shit done
+tests that are impossible to fail are useless, as are the opposite absolutes
+if code is simple enough you dont need to comment and definitely shouldnt overcomplicate
+make code names clear as fuck - function not func or f or some other trash
+
+JSON filetype
+
+XML is used for transmiting stuff from apps to scanners, but we like JSON which
+is that and better
+
+simple data types in JSON
+Json doesnt need those closing tags from XML
+
+symbols.json has our barcodes from the test automation system, making objects
+for barcodes and more
+Using it:
+JSON library in python
+	python json lib on internet
+
+
+class Barcode
+
+jsonformatter.curiousconcept.com #for json data you want formated, shows errors, etc
+beyond compare is useful, though I already have that
+
+Next time: Beyond Compare 3 tutorial
+
+______________________________________________
