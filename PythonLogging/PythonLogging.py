@@ -32,4 +32,6 @@ logging.critical('This is a critical message')  # level 5 prints
 # if we want to make our own log in different modules, its best to not use the root logger above
 import logging
 logger = logging.getLogger(__name__) #__name__ global variable is good practice, taking the name of the module, which is logger
+logger.propagate = False
 logger.info('hello from helper')
+
