@@ -1,4 +1,4 @@
-Pythong to JSON variable type conversions
+Pythong to JSON variable type conversions:
 
 Python			JSON
 dict			object
@@ -8,3 +8,4 @@ int, long, float	number
 True			true
 False			false
 None			null
+
