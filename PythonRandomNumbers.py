@@ -71,7 +71,34 @@ k = secrets.choice(mylist)  # choice picks a random choice that isn't reproducab
 #1111
 print(k)
 
+print()
+
 #numpy module
 import numpy as np
+    # for working with arrays
+l = np.random.rand(3) # 1d array with 3 random floats
+print(l)
+
+m = np.random.rand(3,3) # 3x3 array, 3 random floats for 3 columns and rows
+print(m)
+
+n = np.random.randint(0,10,3)       # 0-10 randints, size of 3
+print(n)
+
+o = np.random.randint(0,10,(3,4))   # randints of 0 to 10, sized at 3x4
+print(o)
+
+print()
+arr = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print(arr)
+np.random.shuffle(arr)              # shuffling an array along the axis, ie it won't
+                                    # shuffle elements in elements of the array
+print(arr)
+
+np.random.seed(1)                   # seeds with np should be used over non-np seeds
+print(np.random.rand(3,3))
+np.random.seed(1)
+print(np.random.rand(3,3))
+
 
 
