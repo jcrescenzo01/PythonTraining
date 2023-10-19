@@ -103,5 +103,15 @@ if __name__ == "__main__":
     numbers = range(10)
     pool = Pool()
 
-    result = pool.map(cube, numbers)
+    result = pool.map(cube, numbers)        # automatically allocates max processes for you,
+                                            # typically as many as possible, then splits
+                                            # numbers, the iterable, into chunks, executing
+                                            #  the function via different processes
+
+    #pool.apply(cube, numbers[0])      # if we just want 1 funct executed by a pool
+
+    pool.close()
+    pool.join()
+
     print(result)
+
