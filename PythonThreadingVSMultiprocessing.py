@@ -44,7 +44,7 @@
             (C/C++) --> numpy, scipy
                 they're wrappers in python that execute code in C
 """
-
+from threading import Thread
 from multiprocessing import Process
 import os
 import time
@@ -54,22 +54,23 @@ def square_numbers():
         i * i
         time.sleep(0.1)
 
-processes = []
-num_processes = os.cpu_count()  # the number of processes should be the num of cpus on your machine
+if __name__ == "__main__":
+    processes = []
+    num_processes = os.cpu_count()  # the number of processes should be the num of cpus on your machine
 
-# create processes
-for i in range(num_processes):
-    p = Process(target=square_numbers)    # target is a function that will be executed by the process
-    processes.append(p)
+    # create processes
+    for i in range(num_processes):
+        p = Process(target=square_numbers)    # target is a function that will be executed by the process
+        processes.append(p)
 
-#start processes
-for p in processes:
-    p.start()
+    #start processes
+    for p in processes:
+        p.start()
 
-# join
-for p in processes:
-    p.join()
+    # join, waiting for all processes to finish
+    for p in processes:
+        p.join()
 
-print('end main')
+    print('end main')
 
 # ended deep into multiprocessing but need to rewatch, confusing
