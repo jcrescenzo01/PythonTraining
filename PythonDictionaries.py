@@ -43,9 +43,8 @@ try:    #try/except, prints error since name isnt in the dict
     print(mydict["name"])
 except:
     print("Error")
-"""
 
-"""
+
 # reestablishing the dictionary by re running it
 mydict = {"name": "Max", "age" : "28", "city" : "New York"}
     #reestablishing my dict because of past exercises
@@ -97,6 +96,8 @@ print(mydict_copy)  # has email2
 print(mydict)       # no email2
 
 print()
+"""
+
 
 # Merging Dictionaries
 my_dict_1 = {"name": "Max", "age" : "28", "email" : "max@xyz.com"}  # only dict with email
@@ -117,7 +118,9 @@ print(my_dict_3)
 #print(value)
 value = my_dict_3[6]
 print(value)
-"""
+
+
+
 # tuple as a key
 mytuple = (8,7)
 tupledict = {mytuple:15}    #since they're immutable, they can work

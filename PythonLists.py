@@ -5,10 +5,13 @@ print(myList)                           #prints the list with brackets
 # list()
 myList2 = list()                        #premaking a list
 print(myList2)                          #nothing in it but prints as brackets
+"""
 
+"""
 # Lists can contain different value types
 myList3 = [5, True, "apple", "Oh yeah! \n lets do it!"] #diff value types
 print(myList3)                          #note \n actually prints
+print(myList3[3])
 
 item = myList3[2]
 print(item)
@@ -17,21 +20,28 @@ if 5 != 2:
     myList3[1] = False
 print(myList3[1])
 
+
 # length function works
 print(len(myList3))
+
 # appending to a list
 myList3.append("lemon")     #
 print(myList3)              # lemon added to end
+
 # removing items with pop method
 a = myList3.pop()
 print(a)                # returns lemon, which was taken out
 print(myList3)          # returns list, but lemon has been taken out
+
 # removing a specific element
 b = myList3.remove(5)   # removing 5 from myList3
 print(myList3)          # 5 is gone
+
+c = myList3.insert(1, "blueberry")  # Insert puts blueberry at whatever index given (1 in this case)
+print(myList3)
 """
 
-"""
+
 # sorting a list
 myList4 = [45, 2, 16, 3002, 8, 8, 98, 18, 12]
 print(myList4)
@@ -54,7 +64,7 @@ print(myList7)
 
 myList_6_7 = myList6 + myList7  # 6 attached to 7 right->left
 print(myList_6_7)
-"""
+
 
 """
 # selecting what indexes / a range / skipping indexes
